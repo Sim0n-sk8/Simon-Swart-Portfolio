@@ -1,0 +1,392 @@
+:root{
+   --primary: #578E7E;
+    --secondary: #EF9C66;
+    --light: #85c7b4;
+    --dark: #2c4842;
+    --background: #f5f5f5;
+    --card-bg: #ffffff;
+    --text: #333333;
+}
+
+*{
+   margin:0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background-color: var(--background);
+}
+
+header{
+   background-color: var(--primary);
+   padding: 1.5rem 5%;
+   box-shadow: 0 4px 12px rgba(0,0,0,0,1);
+   
+   top: 0;
+   z-index: 100;
+}
+
+.headerContent{
+   max-width: 1200px;
+   margin: auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+}
+
+.title h1{
+   color:white;
+   font-size: 2.5rem;
+   letter-spacing:2px;
+   font-weight: 700;
+   
+}
+
+nav ul{
+   display: flex;
+   list-style: none;
+}
+
+nav ul li{
+   margin-left: 0 2rem;
+}
+
+nav ul li a{
+   color: white;
+   text-decoration: none;
+   font-weight: 500;
+   transition: all 0.3s ease;
+   padding: 0.5rem 1rem;
+   border-radius: 4px;
+}
+
+nav ul li a:hover {
+   background-color: rgba(255,255,255,0.2);
+}
+
+.hero {
+   background: linear-gradient(45deg, var(--primary), var(--light));
+    color: white;
+   padding: 5rem 2rem;
+   text-align: center;
+}
+
+.heroContent{
+   max-width: 800px;
+   margin: 0 auto;
+}
+
+.hero h2{
+   font-size:1.2rem;
+   margin-bottom: 2rem;
+}
+
+.hero p{
+   font-size:1.2rem;
+   margin-bottom: 2rem;
+}
+
+.heroButtons{
+   display:flex;
+   justify-content: center;
+   gap: 1rem;
+}
+
+
+.btn{
+   padding: 0.8rem 2rem;
+   border-radius: 30px;
+   text-decoration: none;
+   font-weight: 600;
+   transition: all 0.3s ease;
+   border: none;
+   cursor: pointer;
+}
+
+.btnPrimary{
+   background-color: var(--secondary);
+   color: white;
+}
+
+.btnPrimary:hover {
+   background-color: #e08950;
+   transform: translateY(-3px);
+}
+
+.btnOutline {
+   background-color: transparent;
+   color: white;
+   border: 2px solid white;
+}
+
+.btnOutline:hover {
+   background-color: rgba(255,255,255,0.2);
+   transform: translateY(-3px);
+}
+
+.container{
+   max-width: 1200px;
+   margin: 4rem auto;
+   padding: 0 2rem;
+}
+
+.sectionTitle{
+   text-align: center;
+   margin-bottom: 3rem;
+   position: relative;
+
+}
+
+.sectionTitle h2 {
+   font-size: 2.5rem;
+   color: var(--primary);
+   display: inline-block;
+}
+
+.sectionTitle h2::after {
+   content: '';
+   display: block;
+   width: 50%;
+   height: 4px;
+   background-color: var(--secondary);
+   margin: 0.5rem auto 0;
+}
+
+.aboutGrid {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 3rem;
+   align-items: center;
+}
+
+.aboutImage {
+   border-radius: 10px;
+   overflow: hidden;
+   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.aboutImage img {
+   width: 100%;
+   height: auto;
+   display: block;
+}
+
+.aboutContent h3 {
+   font-size: 1.8rem;
+   color: var(--dark);
+   margin-bottom: 1.5rem;
+}
+
+.aboutContent p {
+   margin-bottom: 1.5rem;
+   font-size: 1.1rem;
+}
+
+.skills {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 0.8rem;
+   margin-top: 2rem;
+}
+
+.skillTag {
+   background-color: var(--light);
+   color: var(--dark);
+   padding: 0.5rem 1rem;
+   border-radius: 30px;
+   font-size: 0.9rem;
+   font-weight: 500;
+}
+
+.projectsGrid {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+   gap: 2rem;
+}
+
+.projectCard {
+   background-color: var(--card-bg);
+   border-radius: 10px;
+   overflow: hidden;
+   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+   transition: all 0.3s ease;
+}
+
+.projectCard:hover {
+   transform: translateY(-10px);
+   box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.projectImage {
+   height: 200px;
+   background-color: var(--light);
+   position: relative;
+   overflow: hidden;
+}
+
+.projectImage img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.projectContent {
+   padding: 1.5rem;
+}
+
+.projectContent h3 {
+   font-size: 1.4rem;
+   margin-bottom: 0.8rem;
+   color: var(--dark);
+}
+
+.projectContent p {
+   margin-bottom: 1.5rem;
+   font-size: 0.95rem;
+   color: #666;
+}
+
+.projectLinks {
+   display: flex;
+   justify-content: space-between;
+}
+
+.projectLinks a {
+   color: var(--primary);
+   text-decoration: none;
+   font-weight: 600;
+   font-size: 0.9rem;
+   transition: all 0.3s ease;
+}
+
+.projectLinks a:hover {
+   color: var(--secondary);
+}
+
+.contact{
+   background-color: var(--primary);
+   color:white;
+   padding: 5rem 2rem;
+   text-align: center;
+   
+}
+
+.contactContent{
+   max-width: 800px;
+
+}
+
+.contact p{
+   margin-bottom: 2rem;
+   font-size: 1.1rem;
+}
+
+
+.contact h2{
+   font-size: 2.5rem;
+   margin-bottom: 1.5rem;
+
+}
+
+.socialLinks{display: flex; justify-content: center; gap:1.5rem; margin-top: 2rem;}/*cause i can lol*/
+
+.socialLinks a {
+   color: white;
+   text-decoration: none;
+   font-size: 1.5rem;
+   transition: all 0.3s ease;
+}
+
+.socialLinks a:hover {
+   color: var(--secondary);
+   transform: translateY(-5px);
+}
+
+
+footer{
+   background-color: var(--dark);
+   color:white;
+   text-align:center;
+   padding: 0.5rem;
+   font-size: 0.9rem;
+}
+
+.cvSection {
+   text-align: center;
+   padding: 3rem 0;
+}
+
+.cvButton {
+   display: inline-block;
+   background-color: var(--primary);
+   color: white;
+   padding: 1rem 2.5rem;
+   border-radius: 30px;
+   text-decoration: none;
+   font-weight: 600;
+   transition: all 0.3s ease;
+   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.cvButton:hover {
+   background-color: var(--secondary);
+   transform: translateY(-3px);
+   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+
+@media screen and (max-width:900px){
+   .aboutGrid{
+      grid-template-columns: 1fr;
+   }
+
+   .aboutImage{
+      order: -1;
+   }
+
+   .hero h2{
+      font-size: 2.2rem;
+   }
+
+   title h1{
+      font-size: 2rem;
+   }
+
+   nav ul{
+      display: none;
+
+   }
+
+   .mobile-menu-btn {
+      display: block;
+      color: white;
+      font-size: 1.5rem;
+      cursor: pointer;
+  }
+}
+
+
+
+@media screen and (max-width: 600px){
+   .projectsGrid{
+      grid-template-columns: 1fr;
+
+   }
+
+   .heroButtons{
+      flex-direction: column;
+      gap: 1rem;
+   }
+
+   .sectionTitle{
+      font-size: 1rem;
+   }
+}
+
+
+
