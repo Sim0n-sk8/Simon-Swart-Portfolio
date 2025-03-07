@@ -82,17 +82,17 @@ nav ul li a:hover {
 }
 
 .hero h2{
-   font-size: 2.5rem;
-   margin-bottom: 1rem;
+   font-size:1.2rem;
+   margin-bottom: 2rem;
 }
 
 .hero p{
-   font-size: 1.2rem;
+   font-size:1.2rem;
    margin-bottom: 2rem;
 }
 
 .heroButtons{
-   display: flex;
+   display:flex;
    justify-content: center;
    gap: 1rem;
 }
@@ -139,6 +139,7 @@ nav ul li a:hover {
    text-align: center;
    margin-bottom: 3rem;
    position: relative;
+
 }
 
 .sectionTitle h2 {
@@ -178,7 +179,7 @@ nav ul li a:hover {
 .aboutContent h3 {
    font-size: 1.8rem;
    color: var(--dark);
-   margin-bottom: 1rem;
+   margin-bottom: 1.5rem;
 }
 
 .aboutContent p {
@@ -269,19 +270,15 @@ nav ul li a:hover {
 
 .contact{
    background-color: var(--primary);
-   color: white;
+   color:white;
    padding: 5rem 2rem;
    text-align: center;
+   
 }
 
 .contactContent{
    max-width: 800px;
-   margin: 0 auto;
-}
 
-.contact h2{
-   font-size: 2.5rem;
-   margin-bottom: 1rem;
 }
 
 .contact p{
@@ -289,12 +286,14 @@ nav ul li a:hover {
    font-size: 1.1rem;
 }
 
-.socialLinks{
-   display: flex; 
-   justify-content: center; 
-   gap: 1.5rem; 
-   margin-top: 2rem;
+
+.contact h2{
+   font-size: 2.5rem;
+   margin-bottom: 1.5rem;
+
 }
+
+.socialLinks{display: flex; justify-content: center; gap:1.5rem; margin-top: 2rem;}/*cause i can lol*/
 
 .socialLinks a {
    color: white;
@@ -308,10 +307,11 @@ nav ul li a:hover {
    transform: translateY(-5px);
 }
 
+
 footer{
    background-color: var(--dark);
-   color: white;
-   text-align: center;
+   color:white;
+   text-align:center;
    padding: 0.5rem;
    font-size: 0.9rem;
 }
@@ -339,6 +339,7 @@ footer{
    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
+
 @media screen and (max-width:900px){
    .aboutGrid{
       grid-template-columns: 1fr;
@@ -352,12 +353,13 @@ footer{
       font-size: 2.2rem;
    }
 
-   .title h1{
+   title h1{
       font-size: 2rem;
    }
 
    nav ul{
       display: none;
+
    }
 
    .mobile-menu-btn {
@@ -365,12 +367,15 @@ footer{
       color: white;
       font-size: 1.5rem;
       cursor: pointer;
-   }
+  }
 }
+
+
 
 @media screen and (max-width: 600px){
    .projectsGrid{
       grid-template-columns: 1fr;
+
    }
 
    .heroButtons{
@@ -378,7 +383,10 @@ footer{
       gap: 1rem;
    }
 
-   .sectionTitle h2{
-      font-size: 2rem;
+   .sectionTitle{
+      font-size: 1rem;
    }
 }
+
+
+
