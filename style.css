@@ -1,12 +1,13 @@
-:root{
-   --primary: #578E7E;
-    --secondary: #EF9C66;
-    --light: #85c7b4;
-    --dark: #2c4842;
-    --background: #f5f5f5;
-    --card-bg: #ffffff;
-    --text: #333333;
+:root {
+   --primary: #006D77;     
+   --secondary: #E29578;   
+   --light: #83C5BE;       
+   --dark: #004C54;        
+   --background: #EDF6F9;  
+   --card-bg: #FFDDD2;     
+   --text: #2B2B2B;        
 }
+
 
 *{
    margin:0;
